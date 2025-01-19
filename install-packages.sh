@@ -19,12 +19,13 @@ pacman -Syu
 
 # List of packages to install
 PACKAGES=(
-    cmatrix genact
+    cmatrix
+    genact
 )
 
 echo -e "${GREEN}Installing packages...${RESET}"
 for PACKAGE in "${PACKAGES[@]}"; do
-    if pacman -S "$PACKAGE"; then
+    if pacman -S "$PACKAGE" --noconfirm; then
         echo -e "${GREEN}$PACKAGE installed successfully.${RESET}"
     else
         echo -e "${RED}Failed to install $PACKAGE.${RESET}"
