@@ -19,8 +19,7 @@ pacman -Syu
 
 # List of packages to install
 PACKAGES=(
-    "cmatrix 
-    genact"
+    cmatrix genact
 )
 
 echo -e "${GREEN}Installing packages...${RESET}"
