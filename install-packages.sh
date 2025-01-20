@@ -69,6 +69,7 @@ PACKAGES=(
     ttf-firacode-nerd
     ttf-jetbrains-mono
     ttf-jetbrains-mono-nerd
+ttf-vlgothic
     tumbler
     vulkan-radeon
     waybar
