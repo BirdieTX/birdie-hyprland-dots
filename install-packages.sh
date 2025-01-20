@@ -75,7 +75,7 @@ PACKAGES=(
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xdg-user-dirs
-    xhost
+    xorg-xhost
 )
 
 echo -e "${GREEN}Installing packages...${RESET}"
