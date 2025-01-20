@@ -27,6 +27,7 @@ PACKAGES=(
     discord
     dunst
     fastfetch
+    flatpak
     figlet
     fish
     fzf
