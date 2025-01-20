@@ -78,23 +78,12 @@ PACKAGES=(
     xhost
 )
 
-echo -e "${GREEN}Installing AUR packages...${RESET}"
-
-# List of packages to install
-AURPACKAGES=(
-    aylurs-gtk-shell
-    bibata-cursor-theme-bin
-    brave-bin
-    grimblast-git
-    pacseek
-)
-
 echo -e "${GREEN}Installing packages...${RESET}"
-for AURPACKAGE in "${AURPACKAGES[@]}"; do
-    if paru -S "$AURPACKAGE" --noconfirm; then
-        echo -e "${GREEN}$AURPACKAGE installed successfully.${RESET}"
+for PACKAGE in "${PACKAGES[@]}"; do
+    if pacman -S "$PACKAGE" --noconfirm; then
+        echo -e "${GREEN}$PACKAGE installed successfully.${RESET}"
     else
-        echo -e "${RED}Failed to install $AURPACKAGE.${RESET}"
+        echo -e "${RED}Failed to install $PACKAGE.${RESET}"
     fi
 done
 echo -e "${GREEN}All packages installed successfully...${RESET}"
