@@ -24,6 +24,7 @@ PACKAGES=(
     btop
     cliphist
     cmatrix
+    discord
     dunst
     fastfetch
     figlet
@@ -60,6 +61,7 @@ PACKAGES=(
     qt6ct
     rofi-wayland
     slurp
+    steam
     ttf-fira-code
     ttf-fira-mono
     ttf-fira-sans

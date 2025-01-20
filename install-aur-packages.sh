@@ -13,8 +13,10 @@ AURPACKAGES=(
     aylurs-gtk-shell
     bibata-cursor-theme-bin
     brave-bin
+    discord-canary
     grimblast-git
     pacseek
+    vscodium-bin
 )
 
 echo -e "${GREEN}Installing AUR packages...${RESET}"
