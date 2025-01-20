@@ -19,16 +19,82 @@ pacman -Syu
 
 # List of packages to install
 PACKAGES=(
+    blueman
+    breeze
+    btop
+    cliphist
     cmatrix
+    dunst
+    fastfetch
+    figlet
+    fish
+    fzf
+    eza
     genact
+    grim
+    grub-customizer
+    gtk4
+    gvfs
+    kitty
+    htop
+    hyprland
+    imagemagick
+    jq
+    libadwaita
+    libnotify
+    man-pages
+    mc
+    mesa
+    nautilus
+    neovim
+    noto-fonts
+    otf-font-awesome
+    papirus-icon-theme
+    pavucontrol
+    pipewire
+    polkit-gnome
+    pulseaudio
+    qalculate-gtk
+    qt5-wayland
+    qt6-wayland
+    qt6ct
+    rofi-wayland
+    slurp
+    ttf-fira-code
+    ttf-fira-mono
+    ttf-fira-sans
+    ttf-firacode-nerd
+    ttf-jetbrains-mono
+    ttf-jetbrains-mono-nerd
+    tumbler
+    vulkan-radeon
+    waybar
+    wireplumber
+    xclip
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    xdg-user-dirs
+    xhost
+)
+
+echo -e "${GREEN}Installing AUR packages...${RESET}"
+
+# List of packages to install
+AURPACKAGES=(
+    aylurs-gtk-shell
+    bibata-cursor-theme-bin
+    brave-bin
+    grimblast-git
+    pacseek
 )
 
 echo -e "${GREEN}Installing packages...${RESET}"
-for PACKAGE in "${PACKAGES[@]}"; do
-    if pacman -S "$PACKAGE" --noconfirm; then
-        echo -e "${GREEN}$PACKAGE installed successfully.${RESET}"
+for AURPACKAGE in "${AURPACKAGES[@]}"; do
+    if paru -S "$AURPACKAGE" --noconfirm; then
+        echo -e "${GREEN}$AURPACKAGE installed successfully.${RESET}"
     else
-        echo -e "${RED}Failed to install $PACKAGE.${RESET}"
+        echo -e "${RED}Failed to install $AURPACKAGE.${RESET}"
     fi
 done
-echo -e "${GREEN}All tasks completed successfully.${RESET}"
+echo -e "${GREEN}All packages installed successfully...${RESET}"
