@@ -50,6 +50,7 @@ PACKAGES=(
     nautilus
     neovim
     noto-fonts
+    nwg-look
     otf-font-awesome
     papirus-icon-theme
     pavucontrol
